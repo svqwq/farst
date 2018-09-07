@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<title>line-height</title>
+			<style>
+				div div{
+					background:pink;
+				}
+				.box1{
+					font-size:12px;
+					line-height:30px;
+				}/*如果设置父级的行高为某个px，那么子级的行高就是这个数*/
+				.box2{
+					font-size:12px;
+					line-height:2em;
+				}/*em这个单位表示文字大小的多少倍,先把2em转化成px(24px)*/
+				.box2 div{
+					font-size:20px;
+				}
+				.box3{
+					font-size:20px;
+					line-height:200%;
+				}/*%和em的继承是一样的*/
+				.box4{
+					font-size:12px;
+					line-height:2;
+				}
+				.box4 div{
+					font-size:20;
+				}/*子级直接继承父级的line-height:2;*/
+			</style>
+		</head>
+		<body>
+			<div class="box1">
+				<div>line-height</div>
+			</div>
+			<br>
+			<div class="box2">
+				<div>line-height</div>
+			</div>
+			<br>
+			<div class="box3">
+				<div>line-height</div>
+			</div>
+			<br>
+			<div class="box4">
+				<div>line-height</div>
+			</div>
+		</body>
+	</html>
