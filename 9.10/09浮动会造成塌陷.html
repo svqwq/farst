@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<title>浮动会造成塌陷</title>
+			<style>
+				.box1{
+					width:400px;
+					border:1px solid blue;
+				}
+				.box2{
+					width:200px;
+					height:200px;
+					background:orange;
+					float:left;
+				}
+				.box3{
+					width:200px;
+					height:200px;
+					background:yellow;
+					float:left;
+				}
+				.box4{
+					width:500px;
+					height:400px;
+					background:green;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="box1">
+				<div class="box2">左侧的小盒子</div>
+				<div class="box3">右侧的小盒子</div>
+			</div>
+			<div class="box4"></div>
+		</body>
+	</html>

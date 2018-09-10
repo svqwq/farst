@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>左窄右宽型的布局</title>
+			<style>
+				body{
+					color:white;
+					font-size:50px;
+				}
+				.header{
+					width:960px;
+					height:150px;
+					background-color:#990000;
+					margin:0 auto;
+					margin-bottom:4px;
+				}
+				.nav{
+					width:960px;
+					height:30px;
+					background-color:#009999;
+					margin:0 auto;
+					margin-bottom:4px;
+				}
+				.banner{
+					width:960px;
+					height:250px;
+					background-color:#cc6600;
+					margin:0 auto;
+					margin-bottom:4px;
+				}
+				.main{
+					width:960px;
+					background-color:#9966cc;
+					margin:0 auto;
+					margin-bottom:4px;
+					overflow:hidden;
+				}
+				.left-side{
+					width:356px;
+					height:550px;
+					background-color:pink;
+					margin-right:4px;
+					float:left;
+				}
+				.right-side{
+					width:600px;
+					height:550px;
+					background-color:orange;
+					float:left;
+				}
+				.footer{
+					width:960px;
+					height:120px;
+					background-color:#444444;
+					margin:0 auto;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="header">头部</div>
+			<div class="nav">导航部分</div>
+			<div class="banner">banner部分</div>
+			<div class="main">
+				<div class="left-side"></div>
+				<div class="right-side"></div>
+			</div>
+			<div class="footer">页脚</div>
+		</body>
+	</html>

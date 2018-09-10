@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>overflow</title>
+			<style>
+				*{margin:0;padding:0;}
+				div{
+					width:200px;
+					height:200px;
+					border:3px solid blue;
+					float:left;
+					margin:10px;
+				}
+			</style>
+		</head>
+		<body>
+			<div style="overflow:visible;">   <!--超出盒子部分的内容，依然可以见（默认值）-->
+				<img src="images/16/big.jpg">
+			</div>
+			<div style="overflow:hidden;">    <!--超出盒子部分的内容，会隐藏-->
+				<img src="images/16/big.jpg">
+			</div>
+			<div style="overflow:scroll;">   <!--会显示滚动条，滚动条占的是内容的宽度和高度-->
+				<img src="images/16/big.jpg">
+			</div>
+			<div style="overflow:scroll;">
+				<img src="images/16/small.jpg">
+			</div>
+			<div style="overflow:auto;">       <!--当内容超出盒子的时候，会自动显示滚动条；当盒子内容没有超出盒子的时候，会隐藏滚动条。-->
+				<img src="images/16/small.jpg">
+			</div>
+			<div style="overflow:auto;">
+				<img src="images/16/big.jpg">
+			</div>
+		</body>
+	</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<title>margin-left auto</title>
+			<style>
+				.box1{
+					width:600px;
+					height:400px;
+					background:blue;
+				}
+				.box2{
+					width:200px;
+					height:200px;
+					background:orange;
+					margin-right:20px;
+					margin-left:auto;/*充满左侧*/
+				}
+				.box3{
+					width:200px;
+					height:200px;
+					background:orange;
+					margin-left:20px;
+					margin-right:auto;/*充满右侧*/
+				}
+				.box4{
+					width:200px;
+					height:200px;
+					background:orange;
+					margin:0 auto;
+			</style>
+		</head>
+		<body>
+			<div class="box1">
+				<div class="box2"></div>
+			</div>
+			<br>
+			<div class="box1">
+				<div class="box3"></div>
+			</div>
+			<br>
+			<div class="box1">
+				<div class="box4"></div>
+			</div>
+		</body>
+	</html>

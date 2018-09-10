@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<title>父子及嵌套关系的盒子,垂直外边距合并的问题</title>
+			<style>
+				*{margin:0;padding:0;}
+				.box1{
+					width:400px;
+					height:400px;
+					background:green;
+					/*解决方案1,给父级盒子设置上外边框。
+					border-top:1px solid white;*/
+					/*解决方案2,给父级盒子设置上内边距。
+					padding-top:1px;*/
+					/*解决方案3,给给父级盒子添加overflow:hiddden*/
+					overflow:hidden;
+				}
+				.box2{
+					width:200px;
+					height:200px;
+					background:yellow;
+					margin-top:50px;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="box1">
+				<div class="box2"></div>
+			</div>
+		</body>
+	</html>		
