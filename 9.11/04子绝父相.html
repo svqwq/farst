@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<title>子绝父相</title>
+			<style>
+				.banner{
+					width:980px;
+					height:450px;
+					margin:100px auto;
+					position:relative;/*子绝父相*/
+				}
+				.banner span{
+					width:100px;
+					height:100px;
+					line-height:100px;
+					text-align:center;
+					font-size:100px;
+					color:white;
+					font-weight:bold;
+					position:absolute;/*子绝父相*/
+					top:175px;
+					left:0;
+					cursor:pointer;/*当鼠标移上的时候,鼠标变小手。*/
+				}
+				.banner .right-btn{
+					right:0;
+					left:auto;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="banner">
+				<img src="04.jpg">
+				<span class="left-btn">&lt;</span>
+				<span class="right-btn">&gt;</span>
+			</div>
+		</body>
+	</html>

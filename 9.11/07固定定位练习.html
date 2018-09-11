@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>固定定位练习</title>
+			<style>
+				*{
+					margin:0;
+					padding:0;
+				}
+				.main{
+					width:998px;
+					margin:0 auto;
+					margin-top:45px;
+				}
+				.header{
+					position:fixed;
+					left:0;
+					top:0;
+				}
+				.left-ad{
+					position:fixed;
+					left:0;
+					top:50%;
+					margin-top:-144px;
+				}
+				.right-ad{
+					position:fixed;
+					right:0;
+					top:50%;
+					margin-top:-144px;
+				}
+				.toTop{
+					position:fixed;
+					right:30px;
+					bottom:50px;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="header"><img src="header.png"></div>
+			<div class="main"><img src="main.png"></div>
+			<div class="left-ad"><img src="ad.png"></div>
+			<div class="right-ad"><img src="ad.png"></div>
+			<div class="toTop"><a href="#top"><img src="backTop.png"></a></div>
+		</body>
+	</html>

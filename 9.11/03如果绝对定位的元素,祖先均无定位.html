@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<title>如果绝对定位的元素,祖先均无定位</title>
+			<style>
+				.box1{
+					width:800px;
+					height:800px;
+					background:orange;
+					margin:50px auto;
+				}
+				.box2{
+					width:200px;
+					height:200px;
+					background:green;
+					position:absolute;
+					bottom:0;
+					right:0;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="box1">
+				<div class="box2"></div>
+			</div>
+		</body>
+	</html>

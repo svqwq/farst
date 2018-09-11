@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<title>相对定位坐标</title>
+			<style>
+
+				.div1{
+					width:200px;
+					height:200px;
+					background:black;
+					color:green;
+					margin-top:200px;
+					margin-left:200px;
+					position:relative;
+					left:50px;/*左边往盒子中间走50px*/
+					/*left:-50px;*//*左边往盒子外面走50px*/
+					/*top:50px;*//*上边往盒子中间走50px*/
+					/*top:-50px;*//*上边往盒子外面走50px*/
+					/*right:50px;*//*盒子右边网盒子中间走50px*/
+					/*right:-50px;*//*盒子右边网盒子外面走50px*/
+					/*bottom:50px;*//*盒子下边网盒子中间走50px*/
+					/*bottom:-50px;*//*盒子下边网盒子外面走50px*/
+				}
+				.div2{
+					width:200px;
+					height:200px;
+					background:orange;
+					margin-left:200px;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="div1">div1</div>
+			<div class="div2">div2</div>
+		</body>
+	</html>
