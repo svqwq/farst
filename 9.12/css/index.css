@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+/*公共部分*/
+body{
+	font-family:"\5B8B\4F53";
+	font-size:12px;
+	color:#aaaaaa;
+}
+a{
+	color:#3d3d3d;
+	font-size:14px;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.w970{
+	width:970px;
+	margin:0 auto;
+}
+.w968{
+	width:968px;
+	margin:0 auto;
+	border:1px solid #dddddd;
+}
+
+
+/*头部部分 start*/
+.header{
+	height:108px;
+}
+.logo{
+	width:290px;
+	height:108px;
+}
+.logo embed{
+	width:290px;
+	height:108px;
+}
+.search{
+	width:400px;
+	height:88px;
+	padding-top:20px;
+}
+.search form{
+	width:394px;
+	height:27px;
+	border:3px solid #eeeeee;
+}
+.q{
+	width:320px;
+	height:25px;
+	line-height:25px;
+	border:1px solid #babebf;
+	border-right:0 none;
+	outline:none;
+	color:#999999;
+	padding-left:5px;
+	float:left;
+}
+.search-btn{
+	width:68px;
+	height:27px;
+	background:url(../images/headerpage.png) 0px -36px;
+	outline:none;
+	border:0 none;
+	color:white;
+	font-size:14px;
+	font-weight:bold;
+	float:left;
+}
+.search p{
+	margin-top:9px;
+}
+.search p a{
+	color:#999999;
+	font-size:12px;
+	margin:0 3px;
+}
+.help{
+	width:280px;
+	height:68px;
+	text-align: right;
+	padding-top:40px;
+	color:#e6e6e6;
+	line-height:20px;
+}
+.help a{
+	font-size:12px;
+	color:#999999;
+}
+.subscribe{
+	background:url(../images/dy.png) no-repeat 0 1px;
+	padding-left:15px;
+}
+/*头部部分 end*/
+
+/*导航部分 start*/
+.nav{
+	height:35px;
+	line-height:35px;
+}
+.nav li{
+	float:left;
+	display:inline;
+}
+.main-nav li{
+	padding:0 10px;
+}
+.main-nav a:hover{
+	color:#0081cc;
+}
+.main-nav .cur a{
+	color:#0081cc;
+	font-weight:bold;
+}
+
+.sub-nav{
+	margin-left:10px;
+	background:url(../images/subnav_bg.png) no-repeat 0 7px;
+}
+.sub-nav li{
+	padding:0 11px;
+	position:relative;
+}
+.sub-nav a{
+	font-size:12px;
+}
+.sub-nav img{
+	position:absolute;
+	top:0px;
+	left:44px;
+}
+
+.user-nav{
+	margin-left:57px;
+	color:#666666;
+}
+.user-nav li{
+	position:relative;
+	margin-right:20px;
+}
+.user-nav s{
+	width:5px;
+	height:3px;
+	background:url('../images/headerpage.png') 0 -64px;
+	position:absolute;
+	right:-9px;
+	top:16px;
+	overflow:hidden;
+}
+/*导航部分 end*/
+
+/*主体广告部分 start*/
+.main{
+	height:365px;
+	margin-top:10px;
+	background-color: #000000;
+	padding:8px 0 7px 0;
+}
+.banner{
+	width:740px;
+	height:365px;
+}
+.banner div{
+	width:740px;
+	height:310px;
+	margin-bottom:8px;
+	position:relative;
+}
+.banner div img{
+	width:740px;
+	height:310px;
+}
+.banner div p{
+	width:740px;
+	height:33px;
+	line-height:33px;
+	background-color: #000;
+	position:absolute;
+	left:0;
+	bottom:0;
+	font-size:14px;
+	color:#fff;
+	text-indent:10px;
+	opacity:0.5;
+	filter:alpha(opacity=50);    /*IE6 IE7 IE8下的写法，是通过滤镜实现的。取值是相差100的数量级*/
+}
+.banner ul{
+
+}
+.banner li{
+	width:56px;
+	height:45px;
+	float:left;
+	display:inline;
+	padding:1px;
+	background:url(../images/rank.png) -228px -52px;
+	margin-right:4px;
+	cursor:pointer;
+}
+.banner li.cur{
+	padding-top:5px;
+	margin-top:-4px;
+	background-position:-228px 0;
+}
+.banner ul img{
+	width:56px;
+	height:45px;
+}
+.banner-right{
+	border:1px solid #393939;
+	width:217px;
+	height:353px;
+	background:url(../images/rank.png);
+	padding:10px 5px 0;
+}
+.banner-right-nav{
+	width:210px;
+	height:21px;
+	border-left:1px solid #545454;
+	border-top:1px solid #545454;
+	margin:0 auto;
+}
+.banner-right-nav li{
+	height:20px;
+	line-height:20px;
+	padding:0 4px;
+	border-right:1px solid #545454;
+	border-bottom:1px solid #545454;
+	float:left;
+	position:relative;
+	color:#666666;
+}
+.banner-right-nav li s{
+	display:none;
+}
+.banner-right-nav li.cur{
+	background-color:#6f6f6f;
+	border-bottom:1px solid #6f6f6f;
+	color:#fff;
+}
+.banner-right-nav li.cur s{
+	display:block;
+	width:5px;
+	height:3px;
+	background:url(../images/rank.png) -248px -132px;
+	position:absolute;
+	left:50%;
+	margin-left:-3px;
+	bottom:-4px;
+}
+.banner-right ol{
+	margin-top:5px;
+	color:#666666;
+}
+.banner-right ol li{
+	height:27px;
+	line-height:27px;
+}
+.banner-right ol span{
+	display:inline-block;
+	width:19px;
+	height:14px;
+	line-height:14px;
+	border:1px solid #4D4D4D;
+	text-align: center;
+}
+.banner-right .top3 span{
+	background:#29b6e9;
+	color:white;
+	font-weight:bold;
+}
+.banner-right ol a{
+	color:#bfbfbf;
+	font-size:12px;
+	margin-left:4px;
+	margin-right:5px;
+}
+.banner-right ol strong{
+	float:right;
+}
+.banner-right .pic-link{
+	display:inline-block;
+	width:8px;
+	height:11px;
+	line-height:11px;
+	background:url(../images/rank.png) -237px -99px;
+	text-indent:-99em;
+	overflow:hidden;
+	margin-right:0;
+	margin-left:4px;
+}
+.banner-right-bottom{
+	margin-top:7px;
+}
+.banner-right-bottom li{
+	background:url(../images/rank.png) no-repeat -287px -108px;
+	padding-left:9px;
+	height:20px;
+	line-height:20px;
+}
+.banner-right-bottom li a{
+	color:#df7e0d;
+	font-size:12px;
+}
+/*主体广告部分 end*/
+
+/*分区一start*/
+.section1{
+	height:438px;
+	margin-top:10px;
+	border-left:1px solid #dddddd;
+	border-bottom:1px solid #dddddd;
+}
+.section1 .hot{
+	height:435px;
+	width:161px;
+	border-top:3px solid #e188c2;
+	border-right:1px solid #dddddd;
+	float:left;
+}
+.section1 .hot h2{
+	color:#e188cd;
+}
+.section1 .man{
+	height:435px;
+	width:161px;
+	border-top:3px solid #879ac5;
+	border-right:1px solid #dddddd;
+	float:left;
+}
+.section1 .man h2{
+	color:#597398;
+}
+.section1 .syn{
+	height:435px;
+	width:160px;
+	border-top:3px solid #a6a6a6;
+	border-right:1px solid #dddddd;
+	float:left;
+}
+.section1 .syn h2{
+	color:#7777a1;
+}
+.section1 .tvb{
+	height:435px;
+	width:160px;
+	border-top:3px solid #7ec0da;
+	border-right:1px solid #dddddd;
+	float:left;
+}
+.section1 .tvb h2{
+	color:#8d99c5;
+}
+.section1 .overseas{
+	height:435px;
+	width:160px;
+	border-top:3px solid #e18786;
+	border-right:1px solid #dddddd;
+	float:left;
+}
+.section1 .overseas h2{
+	color:#d83438;
+}
+.section1 .ent{
+	height:435px;
+	width:161px;
+	border-top:3px solid #e4cd6f;
+	float:left;
+}
+.section1 .ent h2{
+	color:#c69067;
+}
+.section1 h2{
+	height:47px;
+	line-height:47px;
+	font-size:14px;
+	font-weight:bold;
+	text-align: center;
+}
+/*分区一end*/
