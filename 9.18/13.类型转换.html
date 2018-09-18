@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	
+	<label>输入你的年龄</label>：<input type="text"  id="age" />
+	<input type="button" value='魔术' id="btn"/>
+	
+	<script type="text/javascript">
+		
+		//点击按钮，然后执行相应代码
+		document.getElementById('btn').onclick = function(){
+			
+			//获取输入的值
+			var age = document.getElementById('age').value;
+			//age的类型是什么？
+			alert( typeof age); //string
+			//可以对其进行强制转换
+			age = parseInt(age) + 5;
+			alert("你的真实年龄是" + age);
+
+		}
+
+		//强制转换
+		var a = 100;
+
+		//console.log( typeof a); //number
+		var b = String(a); //调用String函数，
+		//console.log( typeof b);//此时就变成string
+		//console.log( typeof a); 
+		
+		var s1 = "200";
+		//console.log( typeof s1 ); //string
+		var c = parseInt( s1 ); //使用parseInt函数转换
+		//console.log( typeof c); // number
+
+		//隐式转换
+		var s2 = '200';
+		//console.log ( s2 - 100);
+
+		//加法比较特殊
+		//console.log( s2 + 100);
+
+		//布尔值的隐式转换
+
+		var s3 = "300";
+
+		var b2 = !!s3;
+		console.log( b2 );
+		console.log( typeof b2);
+
+
+	</script>
+
+
+</body>
+</html>

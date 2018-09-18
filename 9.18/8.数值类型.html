@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = 100;
+		var b = 99.999999;
+
+		//console.log(typeof a);
+		//console.log(typeof b);
+
+		//js中数值的范围
+		//console.log( Number.MAX_VALUE);
+		//console.log( Number.MIN_VALUE);
+
+		//整数 三种形式
+		var x = 100;  //十进制
+		var y = 0xFF; // 十六进制
+		var z = 013;  //八进制
+		
+		//console.log(x,y,z);
+		
+		//小数 三种形式
+		var l = 3.1415926; //常规写法
+		var m = .99;       //如果整数部分为0，可以省略整数部分
+		var n = 1.5e-3;     //科学计数法
+
+		//console.log(l,m,n);
+
+		//数值运算的一些特殊性
+		//console.log( 10 / 0 ); //对0整除
+		//console.log( -10 / 0 );
+		//console.log ( Number.MAX_VALUE * 2); //溢出
+
+		//NaN
+		var p = 1 - 'js';
+		//console.log( p );
+		//console.log( typeof p );
+
+		console.log ( 0.2 * 100 == 1*100 - 0.8*100 );
+		console.log ( 0.3 * 100 == (1 - 0.7) * 100 );
+
+
+		//console.log ( 0.4 == 1 - 0.6 );
+		//console.log ( 0.5 == 1 - 0.5 );
+		//console.log ( 0.1 == 1 - 0.9 );
+
+
+	</script>
+</body>
+</html>

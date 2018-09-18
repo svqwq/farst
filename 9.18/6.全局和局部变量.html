@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a  =100;
+		console.log('全局中访问a--' + a);
+		
+		function f1(){
+			var b = 200;
+			console.log('局部范围访问a--' + a);
+		}
+
+		f1();
+
+		console.log('全局中访问局部b--' + b);
+
+
+	</script>
+</body>
+</html>
